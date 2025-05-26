@@ -242,6 +242,115 @@ onwards.
          </div>
       </div>
       <!-- end contact section -->
+
+      <!-- Contact Us – start -->
+<section class="contact-us" id="contact">
+  <h2>Get in touch</h2>
+
+  <form action="/send-message" method="POST" class="contact-form">
+    <div class="field">
+      <label for="name">Name<span>*</span></label>
+      <input type="text" id="name" name="name" required />
+    </div>
+
+    <div class="field">
+      <label for="email">Email<span>*</span></label>
+      <input type="email" id="email" name="email" required />
+    </div>
+
+    <div class="field">
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" />
+    </div>
+
+    <div class="field">
+      <label for="message">Message<span>*</span></label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+    </div>
+
+    <button type="submit">Send&nbsp;Message</button>
+  </form>
+</section>
+
+<style>
+/* ——— Contact-Us styling ——— */
+:root {
+  --primary: #0066ff;
+  --bg: #f7f9fc;
+  --text: #333;
+  --radius: 0.5rem;
+}
+
+.contact-us {
+  padding: 4rem 1rem;
+  background: var(--bg);
+  max-width: 750px;
+  margin: 0 auto;
+  border-radius: var(--radius);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.07);
+}
+
+.contact-us h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary);
+}
+
+.contact-form .field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+}
+
+.contact-form label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--text);
+}
+
+.contact-form label span {
+  color: #e31b23; /* red asterisk for required */
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid var(--primary);
+  border-color: transparent;
+}
+
+.contact-form button {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.contact-form button:hover {
+  background: #0052cc;
+}
+
+@media (min-width: 600px) {
+  .contact-form .field-group {
+    display: flex;
+    gap: 1rem;
+  }
+}
+</style>
+<!-- Contact Us – end -->
+
       <!-- footer -->
       <footer>
          <div class="footer">
